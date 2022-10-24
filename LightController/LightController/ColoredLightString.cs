@@ -20,8 +20,8 @@ public class ColoredLightString : LightString<ColoredBulb>
     {
         //Try with from 
         int counter = 2;
-        int colorIndex = 1;
-        if (serialNumber < counter)
+        int colorIndex = 2;
+        if (serialNumber <= counter)
         {
             Console.WriteLine("serialNumber: " + serialNumber);
             return (Color)serialNumber;
@@ -35,7 +35,7 @@ public class ColoredLightString : LightString<ColoredBulb>
             {
                 colorIndex = 1;
             }
-        } while (counter%serialNumber != 0 );
+        } while (serialNumber%counter != 0 );
 
         Console.WriteLine("ColorIndex: " + colorIndex  + " counter: " + counter);
         return (Color)colorIndex;
