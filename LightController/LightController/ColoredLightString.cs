@@ -19,27 +19,26 @@ public class ColoredLightString : LightString<ColoredBulb>
     private Color GetColor(int serialNumber)
     {
 
-        int counter = 2;
+        int enumsLength = Enum.GetNames(typeof(Color)).Length;
+        int counter = enumsLength+1;
         int colorIndex = 1;
-        if (serialNumber==1)
+        if (serialNumber < counter)
         {
-            return Color.RED;
-        }
-        while (serialNumber%counter != 0)
-        {
-            
-            counter++;
-            if (colorIndex>4)
-            {
-                colorIndex = 1;
-            }
-            else
-            {
-                colorIndex++;
-            }
+            Console.WriteLine("serialNumber: " + serialNumber);
+            return (Color)serialNumber;
         }
 
-        Console.WriteLine("Color index: "+ colorIndex);
+        do
+        {
+            counter++;
+            if (colorIndex > 4)
+            {
+                colorIndex = 1; 
+                
+            }else { colorIndex++; }
+        } while (serialNumber%counter != 0 && colorIndex <= 4 );
+
+        Console.WriteLine("ColorIndex: " + colorIndex  + " counter: " + counter);
         return (Color)colorIndex;
     }
 

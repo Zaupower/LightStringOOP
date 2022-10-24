@@ -7,6 +7,11 @@ public class Bulb
     private bool state;
     private int SerialNumber;
 
+    public Bulb(int serialNumber)
+    {
+        SetSerialNumber(serialNumber);
+    }
+    
     public void SetSerialNumber(int serialNumber)
     {
         this.SerialNumber = serialNumber;
@@ -28,8 +33,8 @@ public class Bulb
     public override string ToString()
     {
         StringBuilder s = new StringBuilder();
-        string bulb_state = state == true ? "ON" : "OFF";
-        s.Append("State: " + bulb_state);
-        return base.ToString();
+        string bulbState = state? "ON" : "OFF";
+        s.Append("Serial numer: "+GetSerialNumber()+" State: " + bulbState);
+        return s.ToString();
     }
 }

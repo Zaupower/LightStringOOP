@@ -7,7 +7,7 @@ public class ColoredBulb : Bulb
     private Color color;
     private int SerialNumber;
 
-    public ColoredBulb(Color color, int serialNumber)
+    public ColoredBulb(Color color, int serialNumber) : base(serialNumber)
     {
         SetColor(color);
         SetSerialNumber(serialNumber);
