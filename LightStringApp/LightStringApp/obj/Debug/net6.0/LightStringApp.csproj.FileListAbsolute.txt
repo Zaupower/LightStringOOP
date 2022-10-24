@@ -1,0 +1,15 @@
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\bin\Debug\net6.0\LightStringApp.exe
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\bin\Debug\net6.0\LightStringApp.deps.json
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\bin\Debug\net6.0\LightStringApp.runtimeconfig.json
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\bin\Debug\net6.0\LightStringApp.dll
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\bin\Debug\net6.0\LightStringApp.pdb
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\LightStringApp.csproj.AssemblyReference.cache
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\LightStringApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\LightStringApp.AssemblyInfoInputs.cache
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\LightStringApp.AssemblyInfo.cs
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\LightStringApp.csproj.CoreCompileInputs.cache
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\LightStringApp.dll
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\refint\LightStringApp.dll
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\LightStringApp.pdb
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\LightStringApp.genruntimeconfig.cache
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX6\LightstringOOP\LightStringApp\LightStringApp\obj\Debug\net6.0\ref\LightStringApp.dll
