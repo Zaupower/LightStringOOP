@@ -7,61 +7,40 @@ public class ColoredLightString : LightString<ColoredBulb>
     
     public List<ColoredBulb> ColoredBulbs = new List<ColoredBulb>();
     
-    public ColoredLightString(int serialNumber, int length)
+    public ColoredLightString(int[] serialNumbers)
     {
-        for (int i = 0; i < length; i++)
+        for (int i = 0; i < serialNumbers.Length; i++)
         {
-            ColoredBulb coloredBulb = new ColoredBulb(GetColor(serialNumber));
+            ColoredBulb coloredBulb = new ColoredBulb(GetColor(serialNumbers[i]), serialNumbers[i]);
             ColoredBulbs.Add(coloredBulb);
         }
     }
 
     private Color GetColor(int serialNumber)
     {
-        int colorCounter = 1;
-        try
+
+        int counter = 2;
+        int colorIndex = 1;
+        if (serialNumber==1)
         {
-            for (int i = 1; i < serialNumber; i++)
+            return Color.RED;
+        }
+        while (serialNumber%counter != 0)
+        {
+            
+            counter++;
+            if (colorIndex>4)
             {
-                if (colorCounter > 4)
-                    colorCounter = 1;
-                
-                if ((serialNumber%i) == 0)
-                {
-                    return SelectColor(colorCounter);
-                }
-
-                colorCounter++;
+                colorIndex = 1;
             }
-
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
+            else
+            {
+                colorIndex++;
+            }
         }
 
-        return Color.NONE;
-    }
-
-    private Color SelectColor(int index)
-    {
-        switch (index)
-        {
-           case 1:
-               return Color.RED;
-           break;
-           case 2:
-               return Color.BLUE;
-           break;
-           case 3:
-               return Color.GREEN;
-           break;
-           case 4:
-               return Color.YELLOW;
-        }
-
-        return Color.NONE;
+        Console.WriteLine("Color index: "+ colorIndex);
+        return (Color)colorIndex;
     }
 
     public override List<ColoredBulb> LightsState()
@@ -69,8 +48,17 @@ public class ColoredLightString : LightString<ColoredBulb>
         //set state 
         foreach (var coloredBulb in ColoredBulbs)
         {
-            String minute = DateTime.Now.ToString("mm");
-            Console.WriteLine(minute);
+            int minute = 0;
+            int.TryParse(DateTime.Now.ToString("mm"),out minute);
+            if (minute%2==0)
+            {
+                coloredBulb.SetState(true);
+            }
+            else
+            {
+                coloredBulb.SetState(false);
+            }
+            
             //set bulbs state and the return them
         }
 
