@@ -18,9 +18,10 @@ public class ColoredLightString : LightString<ColoredBulb>
 
     private Color GetColor(int serialNumber)
     {
-        //Try with from 
+        
         int counter = 2;
         int colorIndex = 2;
+
         //Second state exists because 4%2 = 0 but 
         //by multiplicity rule where:
         // a is multiple of b if there are an x where 
