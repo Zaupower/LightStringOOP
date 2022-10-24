@@ -21,13 +21,18 @@ public class ColoredLightString : LightString<ColoredBulb>
         //Try with from 
         int counter = 2;
         int colorIndex = 2;
-        if (serialNumber <= counter)
+        //Second state exists because 4%2 = 0 but 
+        //by multiplicity rule where:
+        // a is multiple of b if there are an x where 
+        // a=bx, so 2=4x is not possible, so 
+        // a bulb with an serial number 2 cannot be yellow(2)
+        if (serialNumber <= counter || serialNumber == 4)
         {
             Console.WriteLine("serialNumber: " + serialNumber);
             return (Color)serialNumber;
         }
 
-        do
+        while (serialNumber % counter != 0)
         {
             counter++;
             colorIndex++;
@@ -35,7 +40,7 @@ public class ColoredLightString : LightString<ColoredBulb>
             {
                 colorIndex = 1;
             }
-        } while (serialNumber%counter != 0 );
+        } 
 
         Console.WriteLine("ColorIndex: " + colorIndex  + " counter: " + counter);
         return (Color)colorIndex;
