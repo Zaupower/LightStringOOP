@@ -1,0 +1,5 @@
+/home/pfmq052/Documents/github/QABootcamp/Task4/EX6/LightController/LightController/obj/Debug/net6.0/LightController.csproj.AssemblyReference.cache
+/home/pfmq052/Documents/github/QABootcamp/Task4/EX6/LightController/LightController/obj/Debug/net6.0/LightController.GeneratedMSBuildEditorConfig.editorconfig
+/home/pfmq052/Documents/github/QABootcamp/Task4/EX6/LightController/LightController/obj/Debug/net6.0/LightController.AssemblyInfoInputs.cache
+/home/pfmq052/Documents/github/QABootcamp/Task4/EX6/LightController/LightController/obj/Debug/net6.0/LightController.AssemblyInfo.cs
+/home/pfmq052/Documents/github/QABootcamp/Task4/EX6/LightController/LightController/obj/Debug/net6.0/LightController.csproj.CoreCompileInputs.cache
