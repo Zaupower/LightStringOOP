@@ -29,7 +29,6 @@ public class ColoredLightString : LightString<ColoredBulb>
         // a bulb with an serial number 2 cannot be yellow(2)
         if (serialNumber <= counter || serialNumber == 4)
         {
-            Console.WriteLine("serialNumber: " + serialNumber);
             return (Color)serialNumber;
         }
 
@@ -43,7 +42,6 @@ public class ColoredLightString : LightString<ColoredBulb>
             }
         } 
 
-        Console.WriteLine("ColorIndex: " + colorIndex  + " counter: " + counter);
         return (Color)colorIndex;
     }
 
