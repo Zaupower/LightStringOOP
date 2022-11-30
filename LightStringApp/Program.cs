@@ -22,7 +22,6 @@ class Program
         {
             Console.WriteLine(coloredBulb.ToString());
         }
-
         Console.WriteLine("");
         Console.WriteLine("SimpleLightString");
         foreach (var bulb in simpleLightString.LightsState())

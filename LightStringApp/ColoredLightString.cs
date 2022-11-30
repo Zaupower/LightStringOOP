@@ -50,6 +50,7 @@ public class ColoredLightString : LightString<ColoredBulb>
 
     public override List<ColoredBulb> LightsState()
     {
+        //VERIFICAR SERIAL NUMBER PARA DECIDIR SE FICA ON OU OFF
         //set state 
         foreach (var coloredBulb in Bulbs)
         {
