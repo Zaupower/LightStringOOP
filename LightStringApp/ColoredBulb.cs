@@ -16,7 +16,7 @@ public class ColoredBulb : Bulb
     public override string ToString()
     {
         StringBuilder s = new StringBuilder();
-        string bulbState = GetState()? "ON" : "OFF";
+        string bulbState = this.State? "ON" : "OFF";
         s.Append("Serial number: "+this.SerialNumber+" State: " + bulbState +" Color: "+ this.Color);
         return s.ToString();
     }
