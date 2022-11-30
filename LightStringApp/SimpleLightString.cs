@@ -17,6 +17,7 @@ public class SimpleLightString : LightString<Bulb>
         foreach (var bulb in Bulbs)
         {
             int minute = DateTime.Now.Minute;
+            
             if (minute%2==0)
             { 
                 if(bulb.SerialNumber%2 == 0)
