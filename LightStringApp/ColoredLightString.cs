@@ -55,13 +55,27 @@ public class ColoredLightString : LightString<ColoredBulb>
         foreach (var coloredBulb in Bulbs)
         {
             int minute = DateTime.Now.Minute;
-            if (minute%2==0)
+            if (minute % 2 == 0)
             {
-                coloredBulb.State = true;
+                if (coloredBulb.SerialNumber % 2 == 0)
+                {
+                    coloredBulb.State = true;
+                }
+                else
+                {
+                    coloredBulb.State = false;
+                }
             }
             else
             {
-                coloredBulb.State = false;
+                if (coloredBulb.SerialNumber % 2 == 0)
+                {
+                    coloredBulb.State = false;
+                }
+                else
+                {
+                    coloredBulb.State = true;
+                }
             }
             //set bulbs state and the return them
         }

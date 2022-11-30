@@ -16,12 +16,29 @@ public class SimpleLightString : LightString<Bulb>
         //set state 
         foreach (var bulb in Bulbs)
         {
-            int minute = 0;
-            int.TryParse(DateTime.Now.ToString("mm"),out minute);
+            int minute = DateTime.Now.Minute;
             if (minute%2==0)
-            { bulb.State = true; }
+            { 
+                if(bulb.SerialNumber%2 == 0)
+                {
+                    bulb.State = true; 
+                }
+                else
+                {
+                    bulb.State = false;
+                }
+            }
             else
-            { bulb.State = false; }
+            {
+                if (bulb.SerialNumber % 2 == 0)
+                {
+                    bulb.State = false;
+                }
+                else
+                {
+                    bulb.State = true;
+                }
+            }
             //set bulbs state and the return them
         }
         return this.Bulbs;

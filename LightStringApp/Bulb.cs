@@ -14,7 +14,7 @@ public class Bulb
     
     public override string ToString()
     {
-        StringBuilder s = new StringBuilder();
+        StringBuilder s = new();
         string bulbState = this.State? "ON" : "OFF";
         s.Append("Serial numer: "+this.SerialNumber+" State: " + bulbState);
         return s.ToString();
