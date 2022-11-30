@@ -50,15 +50,14 @@ public class ColoredLightString : LightString<ColoredBulb>
         //set state 
         foreach (var coloredBulb in ColoredBulbs)
         {
-            int minute = 0;
-            int.TryParse(DateTime.Now.ToString("mm"),out minute);
+            int minute = DateTime.Now.Minute;
             if (minute%2==0)
             {
-                coloredBulb.SetState(true);
+                coloredBulb.State(true);
             }
             else
             {
-                coloredBulb.SetState(false);
+                coloredBulb.State(false);
             }
             
             //set bulbs state and the return them

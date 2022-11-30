@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marce\\OneDrive\\Documents\\QABootcamp\\Task4\\EX6\\LightstringOOP\\LightStringApp\\LightStringApp\\LightStringApp.csproj",
+      "projectUniqueName": "C:\\Users\\marce\\OneDrive\\Documents\\QABootcamp\\Lecture4\\EX6\\LightstringOOP\\LightStringApp\\LightStringApp\\LightStringApp.csproj",
       "projectName": "LightStringApp",
-      "projectPath": "C:\\Users\\marce\\OneDrive\\Documents\\QABootcamp\\Task4\\EX6\\LightstringOOP\\LightStringApp\\LightStringApp\\LightStringApp.csproj",
+      "projectPath": "C:\\Users\\marce\\OneDrive\\Documents\\QABootcamp\\Lecture4\\EX6\\LightstringOOP\\LightStringApp\\LightStringApp\\LightStringApp.csproj",
       "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marce\\OneDrive\\Documents\\QABootcamp\\Task4\\EX6\\LightstringOOP\\LightStringApp\\LightStringApp\\obj\\",
+      "outputPath": "C:\\Users\\marce\\OneDrive\\Documents\\QABootcamp\\Lecture4\\EX6\\LightstringOOP\\LightStringApp\\LightStringApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
