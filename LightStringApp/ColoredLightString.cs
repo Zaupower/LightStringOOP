@@ -13,13 +13,6 @@ public class ColoredLightString : LightString<ColoredBulb>
         }
     }
 
-    /// <summary>
-    /// 1. Pls, use propertis instead of Get Set methods. 
-    /// 2. Bulbs field of 'SimpleLightString' and 'ColoredLightString' classes can be moved to base class. 
-    /// 3. it works wrong now, odd and even bulbs should blink every minute in rotation
-    /// </summary>
-    /// <param name="serialNumber"></param>
-    /// <returns></returns>
     private Color GetColor(int serialNumber)
     {
         
@@ -49,9 +42,7 @@ public class ColoredLightString : LightString<ColoredBulb>
     }
 
     public override List<ColoredBulb> LightsState()
-    {
-        //VERIFICAR SERIAL NUMBER PARA DECIDIR SE FICA ON OU OFF
-        //set state 
+    { 
         foreach (var coloredBulb in Bulbs)
         {
             int minute = DateTime.Now.Minute;
